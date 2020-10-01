@@ -1,4 +1,4 @@
-# covid
+# Covid-19 Info
 
 ## Project setup
 ```
