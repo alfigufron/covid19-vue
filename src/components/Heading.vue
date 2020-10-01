@@ -2,7 +2,7 @@
   <div class="heading">
     <div data-aos="zoom-in-down">
       <div class="header-content text-center">
-        <img src="./../assets/images/virus-icon.png" class="img-fluid" alt="virus-icon">
+        <img src="./../assets/images/virus-icon.png" class="img-fluid virus-logo" alt="virus-icon">
         <h1 class="mt-4">COVID-19 Info</h1>
         <h5 class="mt-4">Informasi tentang COVID-19 di Indonesia dan Global</h5>
         <p class="source-data text-muted">
@@ -39,5 +39,21 @@ export default {
 
 .header-content .source-data {
   padding: 20px 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .virus-logo {
+    animation: Logo-spin infinite 6s linear;
+  }
+}
+
+@keyframes Logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>
